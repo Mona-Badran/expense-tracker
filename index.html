@@ -7,6 +7,19 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <div class="container">
+        <form id="transaction-form">
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="number" id="amount" placeholder="Amount" required>
+            <select id="type">
+                <option value="income">Income</option>
+                <option value="expense">Expense</option>
+            </select>
+            <input type="date" id="date" required>
+            <button type="submit">Add Transaction</button>
+        </form>
+    </div>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
