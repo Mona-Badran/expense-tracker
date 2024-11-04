@@ -1,60 +1,106 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     border: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     max-width: 600px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
 }
 
-h1 {
+.heading {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-form{
+.transaction-form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
 }
 
-input, select, button {
+.transaction-form input,
+.transaction-form select,
+.transaction-form button {
     padding: 10px;
     font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
 }
 
-form, .filters {
+.submit-button {
+    background-color: #4CAF50;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background-color: #45a049;
+}
+
+.filters {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.filters input,
+.filters select {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: calc(50% - 10px);
+}
+
+.apply-filters-button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.apply-filters-button:hover {
+    background-color: #0056b3;
 }
 
 .transaction-list {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
+    margin-top: 20px;
 }
 
-.transaction-list li {
+.transaction-item {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    border-bottom: 1px solid #ccc;
+    align-items: center;
+    background-color: #fff;
 }
 
 .total-budget {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
     text-align: center;
-    font-size: 24px;
     margin-top: 20px;
 }

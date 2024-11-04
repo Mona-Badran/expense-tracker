@@ -11,15 +11,15 @@
 <body>
     <div class="container">
         <h1>Expense Tracker</h1>
-        <form id="transaction-form">
-            <input type="text" id="description" placeholder="Description" required>
-            <input type="number" id="amount" placeholder="Amount" required>
-            <select id="type">
+        <form id="transaction-form" class="transaction-form">
+            <input type="text" id="description" class="input-field" placeholder="Description" required>
+            <input type="number" id="amount" class="input-field" placeholder="Amount" required>
+            <select id="type" class="select-field">
                 <option value="income">Income</option>
                 <option value="expense">Expense</option>
             </select>
-            <input type="date" id="date" required>
-            <button type="submit">Add Transaction</button>
+            <input type="date" id="date" class="date-field" required>
+            <button type="submit" class="submit-button">Add Transaction</button>
         </form>
 
         <div id="filters" class="filters">
@@ -32,7 +32,7 @@
             </select>
             <input type="date" id="filter-date">
             <input type="text" id="filter-notes" placeholder="Notes">
-            <button id="apply-filters">Apply Filters</button>
+            <button id="apply-filters" class="apply-filters-button">Apply Filters</button>
         </div>
         <ul id="transaction-list" class="transaction-list"></ul>
         <div id="total-budget" class="total-budget">Total Budget: $0</div>
